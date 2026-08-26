@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Create a library target for your Lexer
 add_library(Lexer Lexer/Lexer.cpp)
+add_library(Ast Ast/Ast.cpp)
+add_library(Parser Parser/Parser.cpp)
 
 # Make headers in the Lexer directory accessible to the library and dependents
 target_include_directories(Lexer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
